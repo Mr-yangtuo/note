@@ -29,7 +29,7 @@ export default function HomePage() {
             </div>
             {course.children && (
               <div className="text-xs text-gray-400 mt-1.5">
-                {countNotes(course.children)} 个笔记
+                {countNotes(course)} 个笔记
               </div>
             )}
           </button>
