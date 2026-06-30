@@ -25,7 +25,8 @@ function serveNotesPlugin() {
   };
 }
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === "production" ? "/note/" : "/",
   plugins: [react(), tailwindcss(), serveNotesPlugin()],
   resolve: {
     alias: {
@@ -35,4 +36,4 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
-});
+}));

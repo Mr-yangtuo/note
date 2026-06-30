@@ -66,12 +66,12 @@ export default function Sidebar() {
 
   return (
     <div className="space-y-1">
-      <a
-        href={`/course/${courseNode.path}`}
-        className="block px-3 py-2 text-sm font-semibold text-gray-800 hover:text-blue-600"
+      <button
+        onClick={() => navigate(`/course/${courseNode.path}`)}
+        className="w-full text-left px-3 py-2 text-sm font-semibold text-gray-800 hover:text-blue-600 bg-transparent border-none cursor-pointer"
       >
         {courseNode.name}
-      </a>
+      </button>
       <div className="border-t border-gray-100 pt-1">
         {courseNode.children?.map((child, i) => (
           <TreeNodeItem key={i} node={child} onNavigate={() => {}} />

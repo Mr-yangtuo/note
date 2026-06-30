@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { TreeNode } from "../types";
+import { withBase } from "../utils/base";
 
 /** 获取目录树数据 */
 export function useTree() {
@@ -8,7 +9,7 @@ export function useTree() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/tree.json")
+    fetch(withBase("/tree.json"))
       .then((res) => {
         if (!res.ok) throw new Error("加载目录失败");
         return res.json();

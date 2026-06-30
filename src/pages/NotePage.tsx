@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { useTree, findNodeByPath } from "../hooks/useTree";
 import Breadcrumb from "../components/Breadcrumb";
 import Loading from "../components/Loading";
 import hljs from "highlight.js";
 import "highlight.js/styles/github-dark.min.css";
+import { BASE, withBase } from "../utils/base";
 
 export default function NotePage() {
   const { "*": splat } = useParams();
@@ -20,13 +21,22 @@ export default function NotePage() {
     setLoadingNote(true);
     setNoteError(null);
 
-    fetch(`/notes/${notePath}.html`)
+    fetch(withBase(`/notes/${notePath}.html`))
       .then((res) => {
         if (!res.ok) throw new Error("笔记不存在");
         return res.text();
       })
       .then((text) => {
-        setHtml(text);
+        // 注入 <base> 标签，使 HTML 中的相对路径（图片等）正确解析
+        const dir = notePath.includes("/")
+          ? notePath.substring(0, notePath.lastIndexOf("/") + 1)
+          : "";
+        const baseHref = `${BASE}notes/${dir}`;
+        const processed = text.replace(
+          /<\/title>/i,
+          `</title><base href="${baseHref}">`
+        );
+        setHtml(processed);
       })
       .catch((err) => {
         setNoteError(err.message);
