@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+  <h1>第一章：门电路</h1>
+
+  <h2>基本逻辑门</h2>
+  <table>
+    <tr><th>门类型</th><th>逻辑表达式</th><th>真值表（A B → Y）</th></tr>
+    <tr><td>与门 (AND)</td><td>Y = A · B</td><td>1 1 → 1</td></tr>
+    <tr><td>或门 (OR)</td><td>Y = A + B</td><td>0 1 → 1</td></tr>
+    <tr><td>非门 (NOT)</td><td>Y = A'</td><td>1 → 0</td></tr>
+    <tr><td>与非门 (NAND)</td><td>Y = (A · B)'</td><td>1 1 → 0</td></tr>
+    <tr><td>或非门 (NOR)</td><td>Y = (A + B)'</td><td>0 0 → 1</td></tr>
+  </table>
+
+  <h2>CMOS 门电路</h2>
+  <p>CMOS 电路由 PMOS 和 NMOS 组成互补对称结构。</p>
+  <ul>
+    <li><strong>静态功耗低</strong>：仅在开关瞬态消耗功率</li>
+    <li><strong>抗干扰能力强</strong></li>
+    <li><strong>集成度高</strong></li>
+  </ul>
+
+  <pre><code class="language-verilog">module and_gate (
+    input  wire A,
+    input  wire B,
+    output wire Y
+);
+    assign Y = A &amp; B;
+endmodule</code></pre>
+</body>
+</html>

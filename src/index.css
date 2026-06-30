@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+/* ========== 全局 ========== */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========== 笔记内容 ========== */
+.note-content {
+  @apply text-gray-800 leading-relaxed;
+  word-break: break-word;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.note-content h1 {
+  @apply text-3xl font-bold mt-8 mb-4 pb-2 border-b border-gray-100;
+}
+
+.note-content h2 {
+  @apply text-2xl font-bold mt-7 mb-3;
+}
+
+.note-content h3 {
+  @apply text-xl font-semibold mt-6 mb-2;
+}
+
+.note-content p {
+  @apply mb-4;
+}
+
+.note-content a {
+  @apply text-blue-600 underline hover:text-blue-800 transition-colors;
+}
+
+.note-content ul,
+.note-content ol {
+  @apply mb-4 pl-6;
+}
+
+.note-content li {
+  @apply mb-1.5;
+}
+
+.note-content blockquote {
+  @apply border-l-4 border-blue-200 pl-4 italic text-gray-500 my-6;
+}
+
+.note-content table {
+  @apply w-full border-collapse mb-6 text-sm;
+}
+
+.note-content th,
+.note-content td {
+  @apply border border-gray-200 px-4 py-2.5 text-left;
+}
+
+.note-content th {
+  @apply bg-gray-50 font-semibold text-gray-700;
+}
+
+.note-content tr:nth-child(even) td {
+  @apply bg-gray-50/50;
+}
+
+.note-content pre {
+  @apply mb-6 rounded-xl overflow-x-auto text-sm;
+}
+
+.note-content code {
+  @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600;
+}
+
+.note-content pre code {
+  @apply bg-transparent px-0 py-0 text-gray-100;
+}
+
+.note-content img {
+  @apply max-w-full h-auto my-6 rounded-lg shadow-sm;
+}
+
+.note-content hr {
+  @apply my-8 border-gray-100;
+}
+
+/* 移动端表格横向滚动 */
+.note-content table {
+  @apply block overflow-x-auto whitespace-nowrap md:table md:whitespace-normal;
+}
+
+/* 代码高亮 */
+.note-content pre code.hljs {
+  @apply bg-[#1e1e2e] p-5 block rounded-xl text-sm leading-relaxed;
+}
+
+/* 侧边栏滚动条 */
+aside::-webkit-scrollbar {
+  width: 4px;
+}
+aside::-webkit-scrollbar-thumb {
+  @apply bg-gray-200 rounded-full;
+}
+aside::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
