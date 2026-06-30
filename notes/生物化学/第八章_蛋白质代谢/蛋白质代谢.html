@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>蛋白质代谢</title></head><body>
+
+<h1>蛋白质代谢</h1>
+
+<h2>一、概述</h2>
+<p>蛋白质代谢包括：</p>
+<ul>
+  <li><strong>蛋白质合成</strong>（翻译）：氨基酸→多肽链</li>
+  <li><strong>蛋白质降解</strong>：多肽链→氨基酸</li>
+  <li><strong>氨基酸代谢</strong>：脱氨、碳骨架氧化、一碳单位代谢</li>
+</ul>
+
+<h2>二、蛋白质合成（翻译）</h2>
+
+<h3>中心法则</h3>
+<div style="background:#f8f9fa;padding:16px;border-radius:8px;text-align:center;margin:12px 0;font-family:monospace;font-size:16px;">
+    DNA ──[转录]──→ RNA ──[翻译]──→ 蛋白质
+                       ↑tRNA, rRNA
+</div>
+
+<h3>遗传密码</h3>
+<table>
+  <tr><th>特征</th><th>说明</th></tr>
+  <tr><td>三联体密码</td><td>3个核苷酸编码1个氨基酸</td></tr>
+  <tr><td>简并性</td><td>多数氨基酸有多个密码子（如Leu有6个）</td></tr>
+  <tr><td>起始密码</td><td>AUG（Met）</td></tr>
+  <tr><td>终止密码</td><td>UAA, UAG, UGA（无义密码子）</td></tr>
+  <tr><td>通用性</td><td>从病毒到人类基本一致（线粒体略有差异）</td></tr>
+  <tr><td>摆动假说</td><td>tRNA反密码子第1位与mRNA第3位可非标准配对</td></tr>
+</table>
+
+<h2>三、翻译过程</h2>
+
+<h3>1. 氨基酸活化</h3>
+<p>氨基酸 + tRNA + ATP → 氨酰-tRNA + AMP + PPi</p>
+<p><strong>氨酰-tRNA合成酶</strong>：高度专一，校对功能（"第二遗传密码"）</p>
+
+<h3>2. 翻译起始（原核）</h3>
+<ul>
+  <li>30S小亚基 + IF-1, IF-3 → 结合mRNA的Shine-Dalgarno序列</li>
+  <li>fMet-tRNA + IF-2 + GTP → 识别起始密码AUG</li>
+  <li>50S大亚基结合 → 起始复合物形成</li>
+</ul>
+
+<h3>3. 延伸</h3>
+<div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin:12px 0;">
+<pre style="font-family:monospace;font-size:14px;background:transparent;line-height:1.7;">
+延伸的3个循环步骤（EF-Tu, EF-G, GTP）：
+
+  密码子识别 ← 氨酰-tRNA进入A位（EF-Tu+GTP）
+      ↓
+  肽键形成 ← 肽酰转移酶（23S rRNA核酶活性）
+      ↓
+  转位 ← 核糖体沿mRNA移动3nt（EF-G+GTP）
+      ↑
+  重复直至遇到终止密码
+</pre>
+</div>
+
+<h3>4. 终止</h3>
+<ul>
+  <li>释放因子RF1/RF2识别终止密码</li>
+  <li>多肽链从tRNA释放</li>
+  <li>核糖体解离为大小亚基</li>
+</ul>
+
+<h2>四、蛋白质降解</h2>
+
+<h3>泛素-蛋白酶体途径（真核细胞质）</h3>
+<div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin:12px 0;">
+<pre style="font-family:monospace;font-size:14px;background:transparent;line-height:1.7;">
+<strong>泛素化级联反应：</strong>
+
+  泛素( Ub ) + E1 ─(ATP)─→ Ub~E1（活化）
+                                          ↓
+                              E2 ←─ Ub~E2（结合）
+                                          ↓
+                              E3 ←─ Ub~E3-底物（连接）
+                                          ↓
+                          多聚泛素链标记底物
+                                          ↓
+                         26S蛋白酶体识别并降解
+                         （产生短肽→进一步水解为氨基酸）
+
+<strong>★ 2004年诺贝尔化学奖：Ciechanover, Hershko, Rose</strong>
+</pre>
+</div>
+
+<h3>溶酶体途径</h3>
+<ul>
+  <li>通过自噬（Autophagy）吞入胞质成分</li>
+  <li>溶酶体水解酶（组织蛋白酶）降解</li>
+  <li>非选择性的，饥饿时加强</li>
+</ul>
+
+<h2>五、氨基酸的分解代谢</h2>
+
+<h3>脱氨基作用</h3>
+<table>
+  <tr><th>类型</th><th>反应</th><th>酶</th></tr>
+  <tr><td>氧化脱氨基</td><td>氨基酸 → 酮酸 + NH₃</td><td>谷氨酸脱氢酶(GDH)</td></tr>
+  <tr><td>转氨基</td><td>氨基酸 + α-酮酸 ⇌ 酮酸 + 新氨基酸</td><td>转氨酶（ALT, AST）</td></tr>
+  <tr><td>联合脱氨基</td><td>转氨+氧化脱氨耦合</td><td>转氨酶 + GDH</td></tr>
+  <tr><td>非氧化脱氨基</td><td>脱水/脱硫化氢等</td><td>Ser/Thr脱水酶</td></tr>
+</table>
+
+<div style="background:#f8f9fa;border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin:12px 0;">
+<strong>联合脱氨基（主要途径）：</strong>
+<pre style="font-family:monospace;font-size:14px;background:transparent;text-align:center;">
+     氨基酸       α-酮戊二酸      NAD⁺(NADP⁺)
+      │              ↑              ↑
+      │转氨酶        │              │谷氨酸脱氢酶
+      ↓              │              ↓
+    α-酮酸       谷氨酸        NH₃ + NADH(NADPH)
+
+★ 转氨酶需要辅酶PLP（磷酸吡哆醛=维生素B₆）
+★ ALT（GPT）：丙氨酸+α-KG ⇌ 丙酮酸+谷氨酸
+★ AST（GOT）：天冬氨酸+α-KG ⇌ 草酰乙酸+谷氨酸
+</pre>
+</div>
+
+<h3>氨的转运与排泄</h3>
+<table>
+  <tr><th>组织</th><th>氨的转运形式</th><th>去路</th></tr>
+  <tr><td>肌肉</td><td>丙氨酸（葡萄糖-丙氨酸循环）</td><td>→肝</td></tr>
+  <tr><td>脑</td><td>谷氨酰胺</td><td>→肝/肾</td></tr>
+  <tr><td>肝</td><td>尿素循环</td><td>→尿素→尿</td></tr>
+  <tr><td>肾</td><td>谷氨酰胺→NH₃</td><td>→NH₄⁺→尿（调节酸碱平衡）</td></tr>
+</table>
+
+<h3>尿素循环（鸟氨酸循环）</h3>
+<div style="background:#f0fdf4;border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin:12px 0;">
+<pre style="font-family:monospace;font-size:14px;background:transparent;">
+         NH₃ + CO₂ + 2ATP
+              │
+           氨基甲酰磷酸（CPS I）
+              │
+           鸟氨酸 ────→ 瓜氨酸
+              ↑            │
+              │      天冬氨酸
+           精氨酸 ←──── 精氨酸代琥珀酸
+              │            ↑
+              ↓         延胡索酸
+            尿素
+     （排入血液→肾→尿）
+              
+★ 尿素循环缺陷→高血氨症→肝性脑病
+★ CPS I需要N-乙酰谷氨酸(NAG)作为别构激活剂
+</pre>
+</div>
+
+<h2>六、氨基酸碳骨架的氧化</h2>
+
+<h3>生糖与生酮氨基酸</h3>
+<table>
+  <tr><th>类别</th><th>氨基酸</th></tr>
+  <tr><td><strong>生糖氨基酸</strong></td><td>Ala, Arg, Asn, Asp, Cys, Glu, Gln, Gly, His, Met, Pro, Ser, Thr, Val</td></tr>
+  <tr><td><strong>生酮氨基酸</strong></td><td>Leu, Lys</td></tr>
+  <tr><td><strong>生糖兼生酮</strong></td><td>Ile, Phe, Trp, Tyr</td></tr>
+</table>
+
+<h3>碳骨架进入TCA循环的7个入口</h3>
+<div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin:12px 0;">
+<pre style="font-family:monospace;font-size:14px;background:transparent;">
+    Ala, Cys, Gly, Ser, Thr, Trp ──→ 丙酮酸 ──→ 乙酰CoA
+    Asn, Asp ──→ 草酰乙酸
+    Ile, Leu, Trp ──→ 乙酰CoA / 乙酰乙酰CoA
+    Phe, Tyr ──→ 延胡索酸 + 乙酰乙酰CoA
+    Arg, His, Glu, Gln, Pro ──→ α-酮戊二酸
+    Ile, Met, Val ──→ 琥珀酰CoA
+    Leu, Lys ──→ 乙酰CoA / 乙酰乙酰CoA（纯生酮）
+</pre>
+</div>
+
+<h2>七、一碳单位代谢</h2>
+
+<h3>定义</h3>
+<p><strong>一碳单位</strong>：含一个碳原子的基团（甲基、亚甲基、甲酰基等），由四氢叶酸(THF)携带。</p>
+
+<h3>来源与去向</h3>
+<table>
+  <tr><th>来源</th><th>一碳单位</th><th>去向</th></tr>
+  <tr><td>Ser, Gly</td><td>亚甲基(-CH₂-)</td><td>胸苷酸(dTMP)合成</td></tr>
+  <tr><td>His</td><td>甲酰基(-CHO)</td><td>嘌呤合成（C2, C8）</td></tr>
+  <tr><td>Gly</td><td>次甲基(-CH=)</td><td>嘌呤合成</td></tr>
+  <tr><td>Met（S-腺苷甲硫氨酸）</td><td>甲基(-CH₃)</td><td>甲基化反应</td></tr>
+</table>
+
+<div style="background:#fef2f2;border-left:4px solid #ef4444;padding:12px;margin:16px 0;border-radius:4px;">
+<strong>★ 临床意义：</strong>甲氨蝶呤(MTX)抑制二氢叶酸还原酶，阻断THF再生，抑制DNA合成→抗癌
+</div>
+
+</body></html>

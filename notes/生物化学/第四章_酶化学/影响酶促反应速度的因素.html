@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>影响酶促反应速度的因素</title></head><body>
+
+<h1>影响酶促反应速度的因素</h1>
+
+<h2>一、温度对酶活的影响</h2>
+
+<div style="background:#f8f9fa;padding:16px;border-radius:8px;margin:12px 0;">
+<strong>温度-活性关系曲线↓</strong><br>
+<pre style="font-family:monospace;font-size:14px;background:transparent;text-align:center;">
+酶活性（V）
+   ↑
+   │        ·
+   │      ·   ·
+   │    ·       ·
+   │  ·           ·
+   │·               ·
+   └────────────────────→ 温度
+    低温区           高温区
+   （v随T升高↑）   （酶变性↓）
+    
+      ▲              ▲
+     最适温度      变性温度
+    （人体酶~37°C）（>60°C失活不可逆）
+</pre>
+</div>
+
+<h3>重要概念</h3>
+<ul>
+  <li><strong>Q₁₀值</strong>：温度每升高10°C，反应速度增加的倍数（通常2~3</li>
+  <li><strong>最适温度</strong>：酶活性最大的温度（人体酶约37°C）</li>
+  <li>低温酶（嗜冷菌）：最适温度~4°C</li>
+  <li>高温酶（Taq DNA聚合酶）：最适温度~72°C</li>
+</ul>
+
+<h2>二、pH对酶活的影响</h2>
+
+<table>
+  <tr><th>酶</th><th>最适pH</th><th>存在部位</th></tr>
+  <tr><td>胃蛋白酶</td><td>1.5~2.0</td><td>胃</td></tr>
+  <tr><td>蔗糖酶</td><td>4.5</td><td>小肠</td></tr>
+  <tr><td>脲酶</td><td>6.5</td><td>细菌</td></tr>
+  <tr><td>胰蛋白酶</td><td>7.5~8.0</td><td>胰</td></tr>
+  <tr><td>碱性磷酸酶</td><td>9.5</td><td>骨、肝</td></tr>
+</table>
+
+<h3>pH影响机制</h3>
+<ul>
+  <li>改变活性中心基团的解离状态（His的咪唑基pKₐ=6.0）</li>
+  <li>改变酶的构象（极端pH导致变性）</li>
+  <li>最适pH说明活性中心关键氨基酸的pKₐ</li>
+</ul>
+
+<h2>三、底物浓度的影响</h2>
+<ul>
+  <li>[S]很低时：v ∝ [S]（一级反应）</li>
+  <li>[S]很高时：v = V<sub>max</sub>（零级反应，酶饱和）</li>
+  <li>遵循米氏方程</li>
+</ul>
+
+<h2>四、酶浓度的影响</h2>
+<ul>
+  <li>在[S]足够时，v ∝ [E]（正比关系）</li>
+  <li>用于酶活单位的定量测定</li>
+</ul>
+
+<h2>五、抑制剂的影响</h2>
+
+<h3>1. 可逆抑制</h3>
+
+<table>
+  <tr><th>类型</th><th>作用方式</th><th>V<sub>max</sub></th><th>K<sub>m</sub></th><th>动力学特征</th></tr>
+  <tr><td><strong>竞争性抑制</strong></td><td>抑制剂与底物竞争活性中心</td>
+      <td>不变</td><td>增大</td><td>增加[S]可克服</td></tr>
+  <tr><td><strong>非竞争性抑制</strong></td><td>抑制剂结合酶的其他位点</td>
+      <td>降低</td><td>不变</td><td>无法被[S]克服</td></tr>
+  <tr><td><strong>反竞争性抑制</strong></td><td>抑制剂只结合ES复合物</td>
+      <td>降低</td><td>降低</td><td>较少见</td></tr>
+  <tr><td><strong>混合型抑制</strong></td><td>结合酶和ES复合物</td>
+      <td>降低</td><td>增大/降低</td><td>常见</td></tr>
+</table>
+
+<div style="background:#fef2f2;border-left:4px solid #ef4444;padding:12px;margin:16px 0;border-radius:4px;">
+<strong>★ 实例：</strong><br>
+① 丙二酸对琥珀酸脱氢酶的抑制 — 竞争性抑制（结构相似）<br>
+② 甲氨蝶呤对二氢叶酸还原酶的抑制 — 竞争性抑制（抗癌药）<br>
+③ 他汀类药物对HMG-CoA还原酶的抑制 — 竞争性抑制（降脂药）
+</div>
+
+<h3>2. 不可逆抑制</h3>
+<ul>
+  <li>抑制剂与酶的必需基团共价结合，造成永久失活</li>
+  <li>不能用透析或稀释去除</li>
+</ul>
+
+<table>
+  <tr><th>抑制剂</th><th>作用基团</th><th>实例意义</th></tr>
+  <tr><td>有机磷化合物（DFP、沙林）</td><td>Ser-OH（丝氨酸蛋白酶）</td><td>神经毒剂</td></tr>
+  <tr><td>重金属离子（Hg²⁺、Pb²⁺）</td><td>Cys-SH</td><td>重金属中毒</td></tr>
+  <tr><td>碘乙酰胺</td><td>Cys-SH</td><td>蛋白质组学试剂</td></tr>
+  <tr><td>青霉素</td><td>转肽酶Ser-OH</td><td>杀菌（不可逆酰化）</td></tr>
+</table>
+
+<h2>六、别构调节</h2>
+
+<h3>别构酶特点</h3>
+<ul>
+  <li>多亚基结构</li>
+  <li>活性曲线呈S形（非米氏双曲线）</li>
+  <li>有正协同效应（如Hb的O₂结合）</li>
+  <li>有负协同效应（如某些代谢酶）</li>
+</ul>
+
+<h3>反馈抑制（Feedback Inhibition）</h3>
+<div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px;margin:12px 0;">
+<pre style="font-family:monospace;font-size:14px;background:transparent;text-align:center;">
+      A ──[E₁]──→ B ──[E₂]──→ C ──[E₃]──→ D ──[E₄]──→ E（终产物）
+                                         ↑
+                                         │
+      E抑制E₁（第一个不可逆步骤）───────┘
+      
+      ★ 终产物浓度高时→反馈抑制→节约资源
+</pre>
+</div>
+
+<h2>七、酶活调节的其他方式</h2>
+
+<table>
+  <tr><th>调节方式</th><th>机制</th><th>实例</th></tr>
+  <tr><td>共价修饰</td><td>可逆共价键形成/断裂</td><td>磷酸化（糖原磷酸化酶）</td></tr>
+  <tr><td>酶原激活</td><td>前体蛋白水解激活（不可逆）</td><td>胰蛋白酶原→胰蛋白酶</td></tr>
+  <tr><td>限速酶调控</td><td>代谢途径中催化最慢一步的酶</td><td>PFK-1（糖酵解）</td></tr>
+  <tr><td>别构调节</td><td>调节剂与别构位点结合</td><td>ATCase（嘧啶合成）</td></tr>
+</table>
+
+<h2>八、酶活单位</h2>
+<ul>
+  <li><strong>IU（国际单位）</strong>：25°C下每分钟转化1μmol底物所需的酶量</li>
+  <li><strong>Katal</strong>：每秒转化1mol底物所需的酶量</li>
+  <li><strong>比活</strong>：每毫克蛋白质的酶活力单位（纯度指标）</li>
+  <li><strong>转换数（k<sub>cat</sub>）</strong>：每分子酶每秒转化的底物分子数</li>
+</ul>
+
+</body></html>

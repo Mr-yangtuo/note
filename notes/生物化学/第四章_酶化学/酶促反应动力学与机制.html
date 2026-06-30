@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>酶促反应动力学与机制</title></head><body>
+
+<h1>酶促反应动力学与机制</h1>
+
+<h2>一、酶促反应速度的特点</h2>
+<ul>
+  <li>初期速度与酶浓度成正比</li>
+  <li>底物浓度足够时，反应速度达最大（V<sub>max</sub>）</li>
+  <li>反应速度受pH、温度、抑制剂影响</li>
+</ul>
+
+<h2>二、米氏方程（Michaelis-Menten方程）</h2>
+
+<div style="background:#f8f9fa;padding:16px;border-radius:8px;text-align:center;margin:12px 0;font-size:18px;">
+<strong>V = V<sub>max</sub> × [S] / (K<sub>m</sub> + [S])</strong>
+</div>
+
+<h3>参数意义</h3>
+<table>
+  <tr><th>参数</th><th>含义</th><th>意义</th></tr>
+  <tr><td>V</td><td>反应初速度</td><td>底物转化速率</td></tr>
+  <tr><td>V<sub>max</sub></td><td>最大反应速度</td><td>酶完全被底物饱和时的速度</td></tr>
+  <tr><td>[S]</td><td>底物浓度</td><td>－</td></tr>
+  <tr><td>K<sub>m</sub></td><td>米氏常数</td><td>V = ½V<sub>max</sub>时的[S]，表示酶与底物的亲和力</td></tr>
+</table>
+
+<h3>K<sub>m</sub>值的意义</h3>
+<ul>
+  <li><strong>K<sub>m</sub>越小</strong> → 酶与底物亲和力越大</li>
+  <li><strong>K<sub>m</sub>越大</strong> → 亲和力越小</li>
+  <li>K<sub>m</sub>是酶的特征常数（与酶浓度无关）</li>
+  <li>同一酶对不同底物的K<sub>m</sub>不同</li>
+</ul>
+
+<h2>三、Lineweaver-Burk双倒数作图</h2>
+
+<div style="background:#f8f9fa;padding:16px;border-radius:8px;text-align:center;margin:12px 0;">
+<pre style="font-family:monospace;font-size:14px;background:transparent;">
+将米氏方程取倒数：
+
+1/V = (K<sub>m</sub>/V<sub>max</sub>)(1/[S]) + 1/V<sub>max</sub>
+
+          ┌── y = k·x + b 形式
+          │
+    1/V  │  ╲  斜率 = K<sub>m</sub>/V<sub>max</sub>
+     ↑   │    ╲
+          │      ╲
+          │━━━━━━━╲━━━━→ 1/[S]
+          │         ╲
+          │           ╲
+    截距 = 1/V<sub>max</sub>    -1/K<sub>m</sub>（与x轴交点）
+</pre>
+</div>
+
+<h2>四、酶促反应机制</h2>
+
+<h3>1. 锁钥模型（Fisher, 1894）</h3>
+<ul>
+  <li>底物形状与活性中心"互补"</li>
+  <li>过于刚性，无法解释酶的柔性</li>
+</ul>
+
+<h3>2. 诱导契合模型（Koshland, 1958）</h3>
+<ul>
+  <li>酶在底物结合后构象发生变化</li>
+  <li>活性中心"包裹"底物，形成完整活性构象</li>
+  <li>被X射线晶体学证实</li>
+</ul>
+
+<h3>3. 过渡态稳定</h3>
+<ul>
+  <li>酶与底物的过渡态结合更强</li>
+  <li>降低活化能，加速反应</li>
+  <li>过渡态类似物是强效酶抑制剂</li>
+</ul>
+
+<h2>五、多底物反应机制</h2>
+
+<table>
+  <tr><th>类型</th><th>机制</th><th>举例</th></tr>
+  <tr><td>有序顺序机制</td><td>底物A先结合，产物P先释放</td><td>乳酸脱氢酶</td></tr>
+  <tr><td>随机顺序机制</td><td>底物结合顺序任意</td><td>大部分激酶</td></tr>
+  <tr><td>乒乓机制</td><td>酶与底物A反应后修饰，再与B反应</td><td>转氨酶</td></tr>
+</table>
+
+</body></html>
